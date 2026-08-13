@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+  <title id="title">Hanawa signal desk</title>
+  <desc id="description">A terminal-style banner for an AI product builder focused on AI agents, creative workflows, and developer tools.</desc>
+
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#252b33" stroke-width="1" />
+    </pattern>
+    <clipPath id="screen-clip">
+      <rect x="69" y="59" width="1062" height="242" rx="7" />
+    </clipPath>
+    <style>
+      text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; letter-spacing: 0; }
+      .cursor { animation: blink 1s steps(1, end) infinite; }
+      .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 2.4s ease-out infinite; }
+      .scan { animation: scan 5s linear infinite; }
+      @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
+      @keyframes pulse { 0% { opacity: .7; transform: scale(.65); } 100% { opacity: 0; transform: scale(1.65); } }
+      @keyframes scan { 0% { transform: translateX(-240px); } 100% { transform: translateX(1120px); } }
+      @media (prefers-reduced-motion: reduce) {
+        .cursor, .pulse, .scan { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" fill="#0b0e12" />
+  <rect width="1200" height="360" fill="url(#grid)" opacity=".72" />
+
+  <path d="M0 0H212L178 14H0Z" fill="#67e8d2" />
+  <path d="M1200 360H988L1022 346H1200Z" fill="#ff6b5e" />
+  <rect x="0" y="88" width="10" height="96" fill="#f7d154" />
+  <rect x="1190" y="176" width="10" height="96" fill="#a8ff60" />
+
+  <rect x="68" y="58" width="1064" height="244" rx="8" fill="#090b0e" stroke="#596270" stroke-width="2" />
+  <rect x="68" y="58" width="1064" height="38" rx="8" fill="#171c22" />
+  <path d="M68 88H1132" stroke="#596270" stroke-width="2" />
+
+  <circle cx="93" cy="77" r="6" fill="#ff6b5e" />
+  <circle cx="115" cy="77" r="6" fill="#f7d154" />
+  <circle cx="137" cy="77" r="6" fill="#67e8d2" />
+  <text x="166" y="82" fill="#aab4c0" font-size="14" font-weight="700">HANAWA // SIGNAL DESK</text>
+  <text x="1035" y="82" fill="#67e8d2" font-size="13">ONLINE</text>
+
+  <g clip-path="url(#screen-clip)">
+    <rect class="scan" x="-210" y="97" width="210" height="204" fill="#67e8d2" opacity=".035" />
+  </g>
+
+  <text x="94" y="140" fill="#67e8d2" font-size="15" font-weight="700">CURRENT TRANSMISSION / 001</text>
+  <text x="92" y="205" fill="#f4f7fb" font-size="51" font-weight="800">BUILDING AI PRODUCTS</text>
+  <text x="95" y="241" fill="#aab4c0" font-size="17">AGENTS  /  CREATIVE WORKFLOWS  /  DEVELOPER TOOLS</text>
+
+  <text x="94" y="278" fill="#a8ff60" font-size="15">hanawa@github:~$</text>
+  <text x="270" y="278" fill="#d8dee7" font-size="15">ship --useful --clear</text>
+  <rect class="cursor" x="474" y="264" width="10" height="18" fill="#ff6b5e" />
+
+  <path d="M942 126H1104M942 155H1104M942 184H1104M942 213H1104" stroke="#252b33" stroke-width="1" />
+  <text x="950" y="122" fill="#7f8996" font-size="11">UPLINK</text>
+  <circle class="pulse" cx="1065" cy="143" r="20" fill="none" stroke="#67e8d2" stroke-width="2" />
+  <circle cx="1065" cy="143" r="7" fill="#67e8d2" />
+  <text x="950" y="177" fill="#f7d154" font-size="12" font-weight="700">IDEA</text>
+  <path d="M990 173H1022" stroke="#7f8996" stroke-width="2" />
+  <path d="M1015 168L1022 173L1015 178" fill="none" stroke="#7f8996" stroke-width="2" />
+  <text x="1033" y="177" fill="#ff6b5e" font-size="12" font-weight="700">SHIP</text>
+  <text x="950" y="207" fill="#7f8996" font-size="11">STATUS</text>
+  <text x="1012" y="207" fill="#a8ff60" font-size="11" font-weight="700">IN MOTION</text>
+  <path d="M950 224H1100" stroke="#252b33" stroke-width="7" />
+  <path d="M950 224H1073" stroke="#ff6b5e" stroke-width="7" />
+</svg>
