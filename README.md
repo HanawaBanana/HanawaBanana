@@ -2,6 +2,8 @@
   <img src="./assets/header.svg" width="100%" alt="Hanawa signal desk - building AI products that ship" />
 </p>
 
+<!-- Profile README: HanawaBanana -->
+
 <h1 align="center">Hi, I'm Hanawa.</h1>
 
 <p align="center">
