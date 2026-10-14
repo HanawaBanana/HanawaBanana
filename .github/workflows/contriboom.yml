@@ -1,0 +1,73 @@
+name: Update contribution animation
+
+on:
+  schedule:
+    # Daily at 00:23 UTC (08:23 Asia/Shanghai).
+    - cron: '23 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contriboom-profile
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Generate contribution arena
+        id: contriboom
+        uses: ststyin/contriboom@main
+        with:
+          # ===== Data source =====
+          username: ${{ github.repository_owner }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+          # ===== Output location =====
+          # Written into ./images/contriboom and referenced by README.md.
+          output-dir: images/contriboom
+
+          # ===== Playback mode =====
+          # preview keeps the loop short (~34s per loop on this calendar).
+          # clear would require a safe full clear and loop in ~179s here.
+          mode: preview
+          max-bombs: '10'
+
+          # ===== Explosion rules =====
+          block-damage: instant
+          # previous-week sizes the blast from the last 7 days of activity, capped by range.
+          range-mode: previous-week
+          range: '5'
+
+          # ===== Appearance =====
+          # ocean matches the profile palette (#11151a base, mint #67e8d2 accents).
+          theme: ocean
+          player-icon: images/boom-bot.png
+          player-icon-trim: auto
+
+          # ===== Randomness =====
+          seed: '2026'
+
+      - name: Commit updated images
+        shell: bash
+        env:
+          SVG: ${{ steps.contriboom.outputs.svg }}
+          SVG_STATIC: ${{ steps.contriboom.outputs.svg-static }}
+        run: |
+          git add -f -- "$SVG" "$SVG_STATIC"
+          if git diff --cached --quiet; then
+            echo "Contribution images are unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update contribution animation"
+          git push

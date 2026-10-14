@@ -69,11 +69,9 @@ const hanawa = {
 
 ### Contribution signal
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HanawaBanana/HanawaBanana/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HanawaBanana/HanawaBanana/output/github-contribution-grid-snake.svg" />
-  <img alt="GitHub contribution grid animated as a snake" src="https://raw.githubusercontent.com/HanawaBanana/HanawaBanana/output/github-contribution-grid-snake.svg" />
-</picture>
+<p align="center">
+  <img src="./images/contriboom/game.svg" width="100%" alt="Animated contribution calendar: a character clears the calendar, then rebuilds it" />
+</p>
 
 <p align="center">
   <a href="https://github.com/HanawaBanana">Find me on GitHub</a>
