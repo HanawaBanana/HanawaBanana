@@ -36,10 +36,10 @@ jobs:
           output-dir: images/contriboom
 
           # ===== Playback mode =====
-          # preview keeps the loop short (~34s per loop on this calendar).
-          # clear would require a safe full clear and loop in ~179s here.
-          mode: preview
-          max-bombs: '10'
+          # clear: a safe full clear of the whole calendar, no bomb cap.
+          # On this calendar: 47 bombs, 110/110 blocks cleared, ~130s per loop.
+          # max-bombs is preview-only and is ignored here.
+          mode: clear
 
           # ===== Explosion rules =====
           block-damage: instant
