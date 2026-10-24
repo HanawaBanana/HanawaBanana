@@ -860,8 +860,8 @@
 <rect x="1150" y="94" width="20" height="20" rx="3" fill="#204D66"/>
 <path d="M1153 97h14" stroke="#fff" stroke-opacity=".16" stroke-linecap="round"/>
 <animate attributeName="opacity" dur="134.54s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.599822;0.992567;1" values="1;0;1;1"/></g>
-<g data-cell="52,5"><title>2026-10-23: 2 contributions</title>
-<rect x="1150" y="116" width="20" height="20" rx="3" fill="#204D66"/>
+<g data-cell="52,5"><title>2026-10-23: 14 contributions</title>
+<rect x="1150" y="116" width="20" height="20" rx="3" fill="#35AECA"/>
 <path d="M1153 119h14" stroke="#fff" stroke-opacity=".16" stroke-linecap="round"/>
 <animate attributeName="opacity" dur="134.54s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.618849;0.992567;1" values="1;0;1;1"/></g>
 </g>
