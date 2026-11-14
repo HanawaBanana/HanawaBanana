@@ -374,10 +374,6 @@
 <rect x="1150" y="116" width="20" height="20" rx="3" fill="#172B3A"/>
 <rect x="1150" y="138" width="20" height="20" rx="3" fill="#172B3A"/>
 </g><g id="contributions">
-<g data-cell="0,5"><title>2025-11-14: 2 contributions</title>
-<rect x="6" y="116" width="20" height="20" rx="3" fill="#204D66"/>
-<path d="M9 119h14" stroke="#fff" stroke-opacity=".16" stroke-linecap="round"/>
-</g>
 <g data-cell="2,4"><title>2025-11-27: 3 contributions</title>
 <rect x="50" y="94" width="20" height="20" rx="3" fill="#204D66"/>
 <path d="M53 97h14" stroke="#fff" stroke-opacity=".16" stroke-linecap="round"/>
